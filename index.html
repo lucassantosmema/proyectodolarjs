@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css linkeado -->
+    <link rel="stylesheet" href="./main.css" >
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Bienvenido!</h1>
+
+    <div id="app"> 
+        <div class="content-select">
+            <ul>
+                <li>    
+                    <label for="rp">Elegi cantidad de VP</label>
+                    <select name="rp" id="rp">
+                        <option value="4">550</option>
+                        <option value="8">1050</option>
+                        <option value="16">2175</option>
+                        <option value="40">5550</option>
+                        <option value="80">11500</option>
+                    </select>
+                    <i></i>
+                </li>
+                <li>
+                    <label class="dos" for="banco">Elegi tu banco</label>
+                    <select name="banco" id="banco">
+                        <option value="galicia">Galicia</option>
+                        <option value="bbva">BBVA</option>
+                        <option value="brubank">Brubank</option>
+                        <option value="santander">Santander Rio</option>
+                    </select>
+                    <i></i>
+                </li>
+                <button onclick="getValueUsd()">Obtener valor</button>
+            </ul> 
+        </div>        
+    </div>
+</body>
+<script src="script.js" defer></script>
+
+</html>
